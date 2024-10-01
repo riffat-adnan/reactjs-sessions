@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nawaah</title>
+    <meta name="description" content="content updated" />
+  </head>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: "235496875481920",
+        // appId: `${process.env.BASE_URL}`,
+        autoLogAppEvents: true,
+        xfbml: true,
+        version: "v16.0",
+      });
+    };
+  </script>
+  <script
+    async
+    defer
+    crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js"></script>
+  <body id="scrollbar">
+    <div id="root"></div>
+    <script type="module" src="./src/index.tsx"></script>
+    <script>
+      const global = globalThis;
+    </script>
+  </body>
+</html>
